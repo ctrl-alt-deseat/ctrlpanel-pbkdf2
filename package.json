@@ -1,6 +1,6 @@
 {
   "name": "@ctrlpanel/pbkdf2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": "ctrl-alt-deseat/ctrlpanel-pbkdf2",
   "browser": "browser.js",
