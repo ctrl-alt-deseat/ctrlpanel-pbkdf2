@@ -1,0 +1,27 @@
+{
+  "name": "@ctrlpanel/pbkdf2",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "ctrl-alt-deseat/ctrlpanel-pbkdf2",
+  "browser": "browser.js",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "devDependencies": {
+    "array-buffer-to-hex": "^1.0.0",
+    "hex-to-array-buffer": "^1.1.0",
+    "mocha": "^4.0.1",
+    "standard": "^10.0.3"
+  },
+  "keywords": [
+    "pbkdf2",
+    "sha-256",
+    "sha-384",
+    "sha-512",
+    "crypto",
+    "hmac",
+    "kdf",
+    "salt",
+    "hash"
+  ]
+}
