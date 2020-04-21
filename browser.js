@@ -17,6 +17,6 @@ module.exports = function pbkdf2 (password, salt, iterations, keylen, digest) {
   if (isTypedArray(salt)) salt = salt.buffer.slice(salt.byteOffset, salt.byteOffset + salt.byteLength)
 
   return Promise.resolve()
-    .then(() => crypto.subtle.importKey('raw', password, { name: 'PBKDF2' }, false, ['deriveBits']))
-    .then(key => crypto.subtle.deriveBits({ name: 'PBKDF2', salt, iterations, hash: { name: digest } }, key, keylen << 3))
+    .then(function() { return crypto.subtle.importKey('raw', password, { name: 'PBKDF2' }, false, ['deriveBits']); })
+    .then(function(key) { return crypto.subtle.deriveBits({ name: 'PBKDF2', salt, iterations, hash: { name: digest } }, key, keylen << 3); })
 }
